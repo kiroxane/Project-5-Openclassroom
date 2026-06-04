@@ -1,0 +1,123 @@
+.Image{
+display: block;
+}
+.buttonwide{
+    display: flex;
+}
+.buttonwide button{
+    width: 582px;
+    height: 52px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: #FF6060;
+    display: flex;
+    color:#FFFFFF;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.buttonwide img {
+ 
+
+width: 24px;
+height: 13.71px;
+
+
+opacity: 1;
+
+
+}
+.buttonwide button:nth-child(1){
+    margin-right: 75px;
+}
+.buttonshort{
+    margin-top: 20px;
+    margin-bottom: 24px;
+  
+}
+
+   .p p:first-child{
+     font-family: Montserrat;
+     font-weight: 500;
+     font-size: 36px;
+     line-height: 143%;
+     letter-spacing: 0%;
+     vertical-align: bottom;
+     color: #FF6060;
+     margin-top: 30px;
+     margin-bottom: 0px;
+
+   }
+   .p p:nth-child(2){
+    margin-top: 0px;
+    margin-bottom:0px ;
+
+   }
+.buttonshort button{
+    background: #FF6060;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    color:#FFFFFF;
+    margin-right: 10px;
+    border: none;
+   
+
+}
+.contentBeforeMain{
+    display: flex;
+    justify-content: space-between;
+}
+.bloc-droit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 167px;
+    height: 64px;
+    top: 602px;
+    left: 1170px;
+    opacity: 1;
+
+}
+.rating{
+    display: flex;
+    margin-top: 21px;
+}
+.rating i{
+    margin-right: 4px;
+}
+.aside{
+    display: flex;
+    align-items: center;
+    margin-left: 435px;
+    margin-top: 30px;
+}
+.aside-nom{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    line-height: 143%;
+    letter-spacing: 0%;
+    margin-right: 10px;
+
+
+    
+}
+
+
+ 
