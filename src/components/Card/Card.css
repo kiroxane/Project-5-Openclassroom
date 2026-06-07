@@ -1,0 +1,22 @@
+.card {
+  position: relative;          /* repère pour poser le titre */
+  height: 340px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* recadre sans déformer */
+  border-radius: 10px;
+  display: block;
+}
+
+.card span {
+  position: absolute;
+  bottom: 20px;                /* titre collé en bas */
+  left: 20px;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
