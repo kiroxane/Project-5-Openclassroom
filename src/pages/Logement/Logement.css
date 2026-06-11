@@ -1,123 +1,102 @@
-.Image{
-display: block;
+/* Conteneur de la page */
+.logement {
+  margin-top: 30px;
 }
-.buttonwide{
-    display: flex;
+
+/* --- Titre+tags à gauche, hôte+étoiles à droite, sur la même ligne --- */
+.infos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.buttonwide button{
-    width: 582px;
-    height: 52px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 10px;
-    background: #FF6060;
-    display: flex;
-    color:#FFFFFF;
-    border: none;
-    font-family: Montserrat;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 18px;
-    line-height: 143%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    
-    align-items: center;
-    justify-content: space-between;
-}
-.buttonwide img {
- 
 
-width: 24px;
-height: 13.71px;
-
-
-opacity: 1;
+/* --- Titre + localisation --- */
+.infos-left h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+  margin-top: 30px;
+margin-bottom: 0%;
 
 
 }
-.buttonwide button:nth-child(1){
-    margin-right: 75px;
-}
-.buttonshort{
-    margin-top: 20px;
-    margin-bottom: 24px;
+
+.infos-left p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  margin: 5px 0 0;
+
   
-}
-
-   .p p:first-child{
-     font-family: Montserrat;
-     font-weight: 500;
-     font-size: 36px;
-     line-height: 143%;
-     letter-spacing: 0%;
-     vertical-align: bottom;
-     color: #FF6060;
-     margin-top: 30px;
-     margin-bottom: 0px;
-
-   }
-   .p p:nth-child(2){
-    margin-top: 0px;
-    margin-bottom:0px ;
-
-   }
-.buttonshort button{
-    background: #FF6060;
-    width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    color:#FFFFFF;
-    margin-right: 10px;
-    border: none;
-   
+  
 
 }
-.contentBeforeMain{
-    display: flex;
-    justify-content: space-between;
-}
-.bloc-droit{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 167px;
-    height: 64px;
-    top: 602px;
-    left: 1170px;
-    opacity: 1;
 
-}
-.rating{
-    display: flex;
-    margin-top: 21px;
-}
-.rating i{
-    margin-right: 4px;
-}
-.aside{
-    display: flex;
-    align-items: center;
-    margin-left: 435px;
-    margin-top: 30px;
-}
-.aside-nom{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 18px;
-    color: #FF6060;
-    line-height: 143%;
-    letter-spacing: 0%;
-    margin-right: 10px;
-
-
-    
+/* --- Tags (les petites pastilles rouges) --- */
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
 }
 
+.tags span {
+  background: #ff6060;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px 30px;
+}
 
- 
+/* --- Hôte (nom + photo ronde, alignés à droite) --- */
+.host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 21px;
+}
+
+.host span {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  text-align: right;
+  max-width: 100px;        /* force le nom à passer sur 2 lignes */
+}
+
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;      /* photo ronde */
+  object-fit: cover;
+}
+
+/* --- Les deux collapses côte à côte --- */
+.collapses {
+  display: flex;
+  gap: 76px;             /* espace entre les deux colonnes */
+  margin-top: 24px;
+}
+
+.collapses .collapse {
+  flex: 1;               /* chacun prend la moitié de la largeur */
+  margin-top: 0;         /* on annule la marge du haut (inutile en ligne) */
+}
+
+/* --- Note (les étoiles) --- */
+.rating {
+  display: flex;
+  justify-content: flex-end;   /* pousse les étoiles à droite */
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.rating i {
+  font-size: 24px;
+}
