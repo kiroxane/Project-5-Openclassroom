@@ -39,6 +39,11 @@
   color: #000000;
 }
 
+/* Le lien de la page active : souligné (NavLink ajoute la classe "active") */
+.nav a.active {
+  text-decoration: underline;
+}
+
 /* === Mobile / tablette === */
 @media (max-width: 768px) {
   .container-1 {

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import logements from "../../data/logements.json"
 import Collapse from "../../components/Collapse/Collapse"
 import "./Logement.css"
@@ -20,6 +20,12 @@ function Rating({ note }) {
     export default function Logement() {
       const { id } = useParams()
       const logement = logements.find((l) => l.id === id)
+
+      // id inexistant → on redirige vers la page 404
+      if (!logement) {
+        return <Navigate to="/404" replace />
+      }
+
     return (
      
      <div className="logement">

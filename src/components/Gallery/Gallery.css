@@ -12,6 +12,7 @@
   .gallery {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 20px;
+    padding: 0;
+    background: transparent;   /* le fond gris disparaît sur mobile (cf. maquette) */
   }
 }

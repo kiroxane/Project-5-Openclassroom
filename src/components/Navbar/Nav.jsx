@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   const lists = [
@@ -10,7 +10,9 @@ export default function Nav() {
     <ul className="nav">
       {lists.map((list) => (
         <li key={list.path}>
-          <Link to={list.path}>{list.label}</Link>
+          <NavLink to={list.path} end>
+            {list.label}
+          </NavLink>
         </li>
       ))}
     </ul>

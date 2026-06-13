@@ -35,3 +35,21 @@
   text-decoration: underline;
   margin-top: 180px;
 }
+
+/* === Mobile : textes plus petits === */
+@media (max-width: 768px) {
+  .error404 {
+    margin-top: 80px;
+  }
+  .error404 h1 {
+    font-size: 96px;
+  }
+  .error404 p {
+    font-size: 18px;
+    width: 80%;
+  }
+  .error404 a {
+    font-size: 14px;
+    margin-top: 60px;
+  }
+}

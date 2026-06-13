@@ -34,6 +34,9 @@
   .banner h1 {
     font-size: 18px;
     white-space: normal;       /* le titre peut passer sur 2 lignes */
-    width: 80%;
+    text-align: left;          /* aligné à gauche sur mobile (cf. maquette) */
+    left: 20px;
+    transform: translateY(-50%);
+    width: 60%;
   }
 }

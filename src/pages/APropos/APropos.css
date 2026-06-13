@@ -12,3 +12,13 @@
 .apropos-collapses .collapse {
   margin-top: 30px;
 }
+
+/* === Mobile : collapses pleine largeur === */
+@media (max-width: 768px) {
+  .apropos-collapses {
+    width: 100%;
+  }
+  .apropos-collapses .collapse {
+    margin-top: 15px;
+  }
+}
