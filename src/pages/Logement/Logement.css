@@ -100,3 +100,46 @@ margin-bottom: 0%;
 .rating i {
   font-size: 24px;
 }
+
+/* === Mobile : tout en colonne === */
+@media (max-width: 768px) {
+  /* titre/tags et hôte/étoiles s'empilent */
+  .infos-header {
+    flex-direction: column;
+  }
+  .infos-left h1 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .infos-left p {
+    font-size: 14px;
+  }
+  .tags span {
+    font-size: 10px;
+    padding: 3px 20px;
+  }
+  /* l'hôte repasse à gauche */
+  .host {
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+  .host span {
+    font-size: 12px;
+    text-align: left;
+  }
+  .host img {
+    width: 32px;
+    height: 32px;
+  }
+  .rating {
+    justify-content: flex-start;
+  }
+  .rating i {
+    font-size: 18px;
+  }
+  /* les deux collapses l'un sous l'autre */
+  .collapses {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

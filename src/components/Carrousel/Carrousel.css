@@ -39,3 +39,19 @@
   font-weight: 500;
   font-size: 18px;
 }
+
+/* === Mobile : carrousel plus petit === */
+@media (max-width: 768px) {
+  .carrousel img {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .carrousel i {
+    font-size: 24px;
+  }
+  .carrousel .fa-chevron-left { left: 15px; }
+  .carrousel .fa-chevron-right { right: 15px; }
+  .carrousel-count {
+    font-size: 14px;
+  }
+}

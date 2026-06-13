@@ -24,3 +24,16 @@
   text-align: center;
   white-space: nowrap;       /* garde le titre sur une seule ligne */
 }
+
+/* === Mobile : bannière plus petite === */
+@media (max-width: 768px) {
+  .banner img {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .banner h1 {
+    font-size: 18px;
+    white-space: normal;       /* le titre peut passer sur 2 lignes */
+    width: 80%;
+  }
+}
