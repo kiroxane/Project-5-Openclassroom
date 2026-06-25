@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./Collapse.css"
+import "./Collapse.scss"
 
   export default function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -8,7 +8,7 @@ import "./Collapse.css"
       <div className="collapse">
         <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
           <span>{title}</span>
-          <i className="fa-solid fa-chevron-up"></i>
+          <i className={`fa-solid fa-chevron-up ${isOpen ? "open" : ""}`}></i>
         </div>
 
         {isOpen && <div className="collapse-content">{children}</div>}

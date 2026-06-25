@@ -1,4 +1,3 @@
-/* Tout centré, en colonne */
 .error404 {
   display: flex;
   flex-direction: column;
@@ -7,7 +6,6 @@
   margin-top: 100px;
 }
 
-/* Le gros "404" rouge */
 .error404 h1 {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
@@ -17,7 +15,6 @@
   line-height: 1;
 }
 
-/* Le message */
 .error404 p {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
@@ -26,7 +23,6 @@
   margin-top: 30px;
 }
 
-/* Le lien de retour, souligné */
 .error404 a {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
@@ -36,7 +32,6 @@
   margin-top: 180px;
 }
 
-/* === Mobile : textes plus petits === */
 @media (max-width: 768px) {
   .error404 {
     margin-top: 80px;

@@ -1,16 +1,13 @@
-/* Conteneur de la page */
 .logement {
   margin-top: 30px;
 }
 
-/* --- Titre+tags à gauche, hôte+étoiles à droite, sur la même ligne --- */
 .infos-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-/* --- Titre + localisation --- */
 .infos-left h1 {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
@@ -34,7 +31,6 @@ margin-bottom: 0%;
 
 }
 
-/* --- Tags (les petites pastilles rouges) --- */
 .tags {
   display: flex;
   gap: 10px;
@@ -51,7 +47,6 @@ margin-bottom: 0%;
   padding: 5px 30px;
 }
 
-/* --- Hôte (nom + photo ronde, alignés à droite) --- */
 .host {
   display: flex;
   align-items: center;
@@ -67,32 +62,30 @@ margin-bottom: 0%;
   font-size: 18px;
   color: #ff6060;
   text-align: right;
-  max-width: 100px;        /* force le nom à passer sur 2 lignes */
+  max-width: 100px;
 }
 
 .host img {
   width: 64px;
   height: 64px;
-  border-radius: 50%;      /* photo ronde */
+  border-radius: 50%;
   object-fit: cover;
 }
 
-/* --- Les deux collapses côte à côte --- */
 .collapses {
   display: flex;
-  gap: 76px;             /* espace entre les deux colonnes */
+  gap: 76px;
   margin-top: 24px;
 }
 
 .collapses .collapse {
-  flex: 1;               /* chacun prend la moitié de la largeur */
-  margin-top: 0;         /* on annule la marge du haut (inutile en ligne) */
+  flex: 1;
+  margin-top: 0;
 }
 
-/* --- Note (les étoiles) --- */
 .rating {
   display: flex;
-  justify-content: flex-end;   /* pousse les étoiles à droite */
+  justify-content: flex-end;
   gap: 8px;
   margin-top: 15px;
 }
@@ -101,9 +94,7 @@ margin-bottom: 0%;
   font-size: 24px;
 }
 
-/* === Mobile : tout en colonne === */
 @media (max-width: 768px) {
-  /* titre/tags et hôte/étoiles s'empilent */
   .infos-header {
     flex-direction: column;
   }
@@ -118,10 +109,9 @@ margin-bottom: 0%;
     font-size: 10px;
     padding: 3px 20px;
   }
-  /* étoiles à gauche + hôte à droite, sur une même ligne (cf. maquette) */
   .infos-right {
     display: flex;
-    flex-direction: row-reverse;   /* l'hôte est 1er dans le code → on inverse pour le mettre à droite */
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
@@ -142,7 +132,6 @@ margin-bottom: 0%;
   .rating i {
     font-size: 18px;
   }
-  /* les deux collapses l'un sous l'autre */
   .collapses {
     flex-direction: column;
     gap: 20px;

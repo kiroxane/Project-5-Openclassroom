@@ -2,18 +2,15 @@
   margin-top: 30px;
 }
 
-/* Les collapses empilés, légèrement resserrés au centre */
 .apropos-collapses {
   width: 80%;
   margin: 0 auto;
 }
 
-/* Chaque collapse occupe toute la largeur, avec un espace entre eux */
 .apropos-collapses .collapse {
   margin-top: 30px;
 }
 
-/* === Mobile : collapses pleine largeur === */
 @media (max-width: 768px) {
   .apropos-collapses {
     width: 100%;

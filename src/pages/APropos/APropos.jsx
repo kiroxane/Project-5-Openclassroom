@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 import Collapse from "../../components/Collapse/Collapse";
 import Hero from "../../assets/Hero.png";
-import "./APropos.css";
+import "./APropos.scss";
 
 export default function APropos() {
   return (

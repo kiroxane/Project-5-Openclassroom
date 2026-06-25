@@ -2,7 +2,6 @@
   margin-top: 20px;
 }
 
-/* La barre rouge cliquable (titre + flèche) */
 .collapse-header {
   display: flex;
   align-items: center;
@@ -11,7 +10,7 @@
   color: #ffffff;
   border-radius: 10px;
   padding: 12px 20px;
-  cursor: pointer;            /* le curseur devient une main au survol */
+  cursor: pointer;
 }
 
 .collapse-header span {
@@ -22,9 +21,13 @@
 
 .collapse-header i {
   font-size: 20px;
+  transition: transform 0.3s ease;
 }
 
-/* Le contenu qui se déplie */
+.collapse-header i.open {
+  transform: rotate(180deg);
+}
+
 .collapse-content {
   background: #f6f6f6;
   color: #000000;
@@ -36,7 +39,6 @@
   font-size: 16px;
 }
 
-/* Liste des équipements : on enlève les puces */
 .collapse-content ul {
   list-style: none;
   margin: 0;

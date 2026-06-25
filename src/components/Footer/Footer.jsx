@@ -1,5 +1,5 @@
 import IMG from "../../assets/LOGO.png.noir.png"
-import "./Footer.css"
+import "./Footer.scss"
 export default function Footer ({}){
    
     return (

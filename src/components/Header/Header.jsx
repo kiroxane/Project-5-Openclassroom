@@ -1,6 +1,6 @@
 import LOGO from '../../assets/LOGO.png'
 import Nav from "../Navbar/Nav.jsx"
-import './Header.css'
+import './Header.scss'
 
 export default function Header(){
   return(
